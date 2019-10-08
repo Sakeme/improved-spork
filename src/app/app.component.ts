@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, NgForm } from '@angular/forms';
+import { User } from './class/user';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,10 @@ import { FormControl, NgForm } from '@angular/forms';
 })
 export class AppComponent {
   public name = '';
-  title = 'orelol';
+  public commentaires:User[] =[];
+
   onSubmit(f: NgForm) {
-    console.log(f.value);
+    this.commentaires.push(new User(f.value.pseudo, f.value.choice, f.value.text))
   }
 }
 

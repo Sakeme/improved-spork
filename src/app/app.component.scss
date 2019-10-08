@@ -49,3 +49,50 @@ body {
   margin: 5vh;
   padding: 2vh;
 }
+.all-msg {
+  h1 {
+    margin: 5vh;
+    color: rgb(216, 50, 152);
+    background-color: rgb(223, 84, 223);
+    border-radius: 10px;
+    padding: 1.5vh;
+  }
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(223, 84, 223);
+  border-radius: 10px;
+  padding: 1.5vh;
+  margin: 2vh;
+}
+.msg {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.orelest {
+  color: dodgerblue;
+}
+#pseudo {
+  color: dodgerblue;
+  font-size: 1.7em;
+  p{margin: 0;}
+}
+#text {
+  margin: 1vh;
+  margin-top: 1.35vh;
+  p{margin: 0;}
+}
+#choice {
+  margin: 1vh;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.2em;
+  align-items: center;
+  color: red;
+  p{margin: 0;}
+}
